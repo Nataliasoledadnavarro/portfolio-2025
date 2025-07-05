@@ -1,7 +1,3 @@
-//import Image from "next/image";
-
 export default function Home() {
-  return (
-  <div>holitas</div>
-  );
+  return <main className="min-h-[700px]"></main>;
 }
