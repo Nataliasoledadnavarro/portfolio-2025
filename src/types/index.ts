@@ -14,3 +14,9 @@ export interface Blog {
     readTime: string;
     slug: string;
 }
+
+export interface MenuItem {
+  href: string;
+  label: string;
+}
+
