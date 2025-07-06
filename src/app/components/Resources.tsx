@@ -1,12 +1,12 @@
 "use client";
 
-import { blogs } from "@/contents/blogs";
+import { resources } from "@/contents/resources";
 import Link from "next/link";
 import { FaCalendarAlt, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer } from "@/utils/animations";
 
-export default function Blogs() {
+export default function Resources() {
   return (
     <section className="py-20">
       <div className="container max-w-7xl mx-auto px-4">
@@ -14,7 +14,7 @@ export default function Blogs() {
           className="text-3xl font-bold mb-12 text-center"
           {...fadeInUp}
         >
-          Latest Blog Posts
+          Recursos
         </motion.h2>
 
         <motion.div
@@ -23,7 +23,7 @@ export default function Blogs() {
           initial="initial"
           animate="animate"
         >
-          {blogs.map((blog) => (
+          {resources.map((blog) => (
             <motion.article
               key={blog.slug}
               className="bg-white dark:bg-dark/50 rounded-lg shadow-md p-6"
@@ -31,7 +31,7 @@ export default function Blogs() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Link href={`/blogs/${blog.slug}`}>
+              <Link href={`/resources/${blog.slug}`}>
                 <motion.h3
                   className="text-xl font-semibold mb-2 hover:text-primary transition-colors"
                   whileHover={{ x: 5 }}
@@ -81,7 +81,7 @@ export default function Blogs() {
         >
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
-              href="/blogs"
+              href="/resources"
               className="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
             >
               View All Posts

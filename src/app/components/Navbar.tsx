@@ -14,7 +14,7 @@ import {
   HOME_ROUTE,
   ABOUT_ROUTE,
   PROJECTS_ROUTE,
-  BLOGS_ROUTE,
+  RESOURCES_ROUTE,
   CONTACT_ROUTE,
 } from "@/lib/routes";
 //interface
@@ -32,7 +32,7 @@ const Navbar = () => {
     { href: HOME_ROUTE, label: "Home" },
     { href: ABOUT_ROUTE, label: "Mi recorrido" },
     { href: PROJECTS_ROUTE, label: "Mis proyectos" },
-    { href: BLOGS_ROUTE, label: "Contenido" },
+    { href: RESOURCES_ROUTE, label: "Recursos" },
     { href: CONTACT_ROUTE, label: "Contact" },
   ];
 

@@ -1,6 +1,5 @@
-import Blogs from "./components/Blogs";
+import Resources from "./components/Resources";
 import Hero from "./components/Hero";
-import Newsletter from "./components/Newsletter";
 import Projects from "./components/Projects";
 
 export default function Home() {
@@ -8,8 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <Projects />
-      <Blogs />
-      <Newsletter />
+      <Resources />
     </main>
   );
 }

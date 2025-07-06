@@ -7,11 +7,10 @@ export interface Project {
     image: string;
 }
 
-export interface Blog {
+export interface Resources {
     title: string;
     excerpt: string;
     date: string;
-    readTime: string;
     slug: string;
 }
 
