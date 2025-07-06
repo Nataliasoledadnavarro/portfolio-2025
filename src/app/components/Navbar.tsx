@@ -30,9 +30,9 @@ const Navbar = () => {
 
   const menuItems: MenuItem[] = [
     { href: HOME_ROUTE, label: "Home" },
-    { href: ABOUT_ROUTE, label: "About" },
-    { href: PROJECTS_ROUTE, label: "Projects" },
-    { href: BLOGS_ROUTE, label: "Blogs" },
+    { href: ABOUT_ROUTE, label: "Mi recorrido" },
+    { href: PROJECTS_ROUTE, label: "Mis proyectos" },
+    { href: BLOGS_ROUTE, label: "Contenido" },
     { href: CONTACT_ROUTE, label: "Contact" },
   ];
 
