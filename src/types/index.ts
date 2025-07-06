@@ -20,3 +20,8 @@ export interface MenuItem {
   label: string;
 }
 
+export interface ContactItem {
+  icon: React.ReactNode;
+  title: string;
+  content: React.ReactNode;
+}
