@@ -5,8 +5,8 @@ import Search from '../../public/img/search.svg'
 import MemeGenerator from '../../public/img/meme_generator.svg'
 import Portfolio from '../../public/img/portfolio.jpg'
 import SearchRickMorty from '../../public/img/app.svg'
-import Code from '../../public/img/code.png'
-import ImgUTC from '../../public/img/utc.png'
+import Code from '../../public/img/code.svg'
+import ImgUTC from '../../public/img/utc.svg'
 
 export const projects: Project[] = [
   {
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     image: SearchRickMorty,
   },
   {
-    title: 'BTraductor de Código Murciélago',
+    title: 'Traductor de Código Murciélago',
     description: 'El traductor🦇 es un mini proyecto creado por curiosidad, que permite encriptar y desencriptar mensajes con el código Murciélago. Incluye una breve explicación del sistema y dos traductores interactivos.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     githubLink: 'https://github.com/Nataliasoledadnavarro/codigo-Murcielago',
