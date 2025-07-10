@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 export interface Project {
     title: string;
     description: string;
@@ -23,4 +24,12 @@ export interface ContactItem {
   icon: React.ReactNode;
   title: string;
   content: React.ReactNode;
+}
+
+export interface TimeLineItem {
+  side: "left" | "right";
+  icon: ReactNode;
+  title: string;
+  description: string;
+  year: string;
 }
