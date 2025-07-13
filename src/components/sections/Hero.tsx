@@ -5,7 +5,7 @@ import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeIn, scaleIn } from "@/utils/animations";
-import ProfileImg from "@/../public/img/profile.png"
+import ProfileImg from "@/../public/img/profile.png";
 
 export default function Hero() {
   return (

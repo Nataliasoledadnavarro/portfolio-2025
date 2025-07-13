@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -11,29 +11,22 @@ export default function Footer() {
               NataliaDev&reg;
             </Link>
             <p className="text-sm text-secondary mt-2">
-              © {new Date().getFullYear()}   NataliaDev. All rights reserved.
+              © {new Date().getFullYear()} NataliaDev. All rights reserved.
             </p>
           </div>
 
           <div className="flex space-x-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/Nataliasoledadnavarro"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
             >
               <FaGithub className="h-6 w-6" />
             </a>
+
             <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-secondary hover:text-primary transition-colors"
-            >
-              <FaTwitter className="h-6 w-6" />
-            </a>
-            <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/nataliasoledadnavarro/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
