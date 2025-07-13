@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeIn, scaleIn } from "@/utils/animations";
+import ProfileImg from "@/../public/img/profile.png"
 
 export default function Hero() {
   return (
@@ -17,7 +18,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
           >
             <Image
-              src="/profile.avif"
+              src={ProfileImg}
               alt="Profile"
               width={100}
               height={100}
