@@ -33,11 +33,11 @@ const Navbar = () => {
     { href: ABOUT_ROUTE, label: "Mi recorrido" },
     { href: PROJECTS_ROUTE, label: "Mis proyectos" },
     { href: RESOURCES_ROUTE, label: "Recursos" },
-    { href: CONTACT_ROUTE, label: "Contact" },
+    { href: CONTACT_ROUTE, label: "Contactame" },
   ];
 
   return (
-    <nav className="fixed w-full bg-white/80 dark:bg-dark/80 backdrop-blur-sm z-50">
+    <nav className="fixed w-full bg-white/80 dark:bg-dark backdrop-blur-sm z-50 shadow-md dark:shadow-gray-500/50">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-bold text-primary">
@@ -50,14 +50,14 @@ const Navbar = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="hover:text-primary transition-colors"
+                className="hover:text-primary dark:text-white transition-colors"
               >
                 {item.label}
               </Link>
             ))}
             <motion.button
               onClick={toggleTheme}
-              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-primary transition-colors"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >

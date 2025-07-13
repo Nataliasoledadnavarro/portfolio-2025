@@ -33,3 +33,7 @@ export interface TimeLineItem {
   description: string;
   year: string;
 }
+
+export interface TitlesProps {
+  text: string;
+}

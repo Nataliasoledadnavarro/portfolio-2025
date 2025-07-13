@@ -26,7 +26,7 @@ export default function Hero() {
             />
           </motion.div>
           <motion.h1
-            className="text-4xl md:text-6xl font-bold mb-6"
+            className="text-4xl md:text-6xl font-bold mb-6 dark:text-white"
             {...fadeInUp}
             transition={{ delay: 0.3 }}
           >
@@ -81,7 +81,7 @@ export default function Hero() {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href="/projects"
-                className="bg-primary inline-block w-full md:w-auto text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
+                className="bg-primary inline-block w-full text-gray-800  md:w-auto px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
               >
                 Mis Proyectos
               </Link>

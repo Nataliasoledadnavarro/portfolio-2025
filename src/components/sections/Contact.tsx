@@ -8,6 +8,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { fadeInUp, fadeIn } from "@/utils/animations";
+import Titles from "@/utils/Titles";
 
 const contactItems = [
   {
@@ -55,10 +56,7 @@ const contactItems = [
 export default function Contact() {
   return (
     <div className="container max-w-4xl mx-auto py-20">
-      <motion.h1 className="text-4xl font-bold mb-10 text-center" {...fadeInUp}>
-        Contactame
-      </motion.h1>
-
+      <Titles text={"Contactame"} />
       <motion.div
         className="space-y-8"
         variants={fadeIn}
