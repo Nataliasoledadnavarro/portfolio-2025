@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="container max-w-7xl mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <Link href="/" className="text-xl font-bold text-primary">
+            <Link href="/" className="text-xl font-bold dark:text-primary">
               NataliaDev&reg;
             </Link>
-            <p className="text-sm text-secondary mt-2">
+            <p className="text-sm dark:text-secondary mt-2">
               © {new Date().getFullYear()} NataliaDev. All rights reserved.
             </p>
           </div>
@@ -20,7 +20,7 @@ export default function Footer() {
               href="https://github.com/Nataliasoledadnavarro"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary hover:text-primary transition-colors"
+              className="dark:text-secondary"
             >
               <FaGithub className="h-6 w-6" />
             </a>
@@ -29,7 +29,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/nataliasoledadnavarro/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary hover:text-primary transition-colors"
+              className="dark:text-secondary"
             >
               <FaLinkedin className="h-6 w-6" />
             </a>

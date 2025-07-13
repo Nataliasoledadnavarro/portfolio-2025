@@ -12,22 +12,22 @@ import Titles from "@/utils/Titles";
 
 const contactItems = [
   {
-    icon: <FaEnvelope className="text-primary w-5 h-5" />,
+    icon: <FaEnvelope className="dark:text-primary w-5 h-5" />,
     title: "Email",
     content: (
       <a
         href="mailto:nataliasoledadnavarro@gmail.com"
-        className="text-secondary hover:text-primary"
+        className="text-gray-800 dark:text-secondary"
       >
         nataliasoledadnavarro@gmail.com
       </a>
     ),
   },
   {
-    icon: <FaPhone className="text-primary w-5 h-5" />,
+    icon: <FaPhone className="dark:text-primary w-5 h-5" />,
     title: "Teléfono",
     content: (
-      <a href="tel:+1161737665" className="text-secondary hover:text-primary">
+      <a href="tel:+1161737665" className="text-gray-800 dark:text-secondary">
         11 6173 7665
       </a>
     ),
@@ -40,16 +40,20 @@ const contactItems = [
         href="https://wa.me/5491161737665"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-secondary hover:text-green-500"
+        className="text-gray-800 dark:text-secondary hover:text-green-500"
       >
         Enviar mensaje
       </a>
     ),
   },
   {
-    icon: <FaMapMarkerAlt className="text-primary w-5 h-5" />,
+    icon: <FaMapMarkerAlt className="dark:text-primary w-5 h-5" />,
     title: "Ubicación",
-    content: <p className="text-secondary">San Martín, Buenos Aires</p>,
+    content: (
+      <p className="text-gray-800 dark:text-secondary">
+        San Martín, Buenos Aires
+      </p>
+    ),
   },
 ];
 
@@ -64,7 +68,7 @@ export default function Contact() {
         animate="animate"
       >
         <motion.p
-          className="text-center text-secondary max-w-xl mx-auto"
+          className="text-center dark:text-secondary max-w-xl mx-auto"
           variants={fadeInUp}
         >
           Siempre es un buen momento para crear algo nuevo y formar parte de
@@ -83,7 +87,7 @@ export default function Contact() {
             >
               {item.icon}
               <div>
-                <h3 className="font-semibold">{item.title}</h3>
+                <h3 className="font-semibold dark:text-white">{item.title}</h3>
                 {item.content}
               </div>
             </motion.div>

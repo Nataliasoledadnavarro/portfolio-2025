@@ -20,14 +20,14 @@ export default function Resources() {
         {resources.map((resource, index) => (
           <motion.article
             key={index}
-            className="bg-white dark:bg-dark/50 rounded-lg shadow-md overflow-hidden"
+            className="rounded-lg shadow-md dark:shadow-gray-500/50 overflow-hidden"
             variants={fadeInUp}
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="p-6">
               <motion.h2
-                className="text-xl font-semibold mb-2"
+                className="text-xl font-semibold mb-2 dark:text-white"
                 whileHover={{ x: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
@@ -35,7 +35,7 @@ export default function Resources() {
               </motion.h2>
 
               <motion.p
-                className="text-secondary mb-4"
+                className="text-gray-700 dark:text-secondary mb-4"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
@@ -44,7 +44,7 @@ export default function Resources() {
               </motion.p>
 
               <motion.div
-                className="flex items-center gap-4 text-sm text-secondary"
+                className="flex items-center gap-4 text-sm dark:text-primary"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
@@ -61,7 +61,7 @@ export default function Resources() {
                   href={resource.slug}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-primary font-medium"
+                  className="flex items-center gap-2 dark:text-primary font-medium"
                   whileHover={{ scale: 1.1 }}
                 >
                   <FaExternalLinkAlt className="h-4 w-4" />

@@ -36,7 +36,7 @@ export default function Projects() {
                 />
               </div>
               <motion.h3
-                className="text-xl font-semibold mb-2"
+                className="text-xl font-semibold mb-2 dark:text-white"
                 whileHover={{ x: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
@@ -59,7 +59,7 @@ export default function Projects() {
                 {project.technologies.map((tech) => (
                   <motion.span
                     key={tech}
-                    className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                    className="px-3 py-1 bg-primary/40 text-gray-700 dark:text-primary rounded-full text-sm"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -77,7 +77,7 @@ export default function Projects() {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-secondary hover:text-primary transition-colors"
+                  className="flex items-center gap-2 dark:text-secondary  transition-colors"
                   whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -88,7 +88,7 @@ export default function Projects() {
                   href={project.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-secondary hover:text-primary transition-colors"
+                  className="flex items-center gap-2 dark:text-secondary transition-colors"
                   whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >
