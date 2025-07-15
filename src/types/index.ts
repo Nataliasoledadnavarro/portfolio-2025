@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Skills } from '@/types/index';
 export interface Project {
     title: string;
     description: string;
@@ -36,4 +37,9 @@ export interface TimeLineItem {
 
 export interface TitlesProps {
   text: string;
+}
+
+export interface Skills {
+  name: string;
+  icon: ReactNode;
 }
