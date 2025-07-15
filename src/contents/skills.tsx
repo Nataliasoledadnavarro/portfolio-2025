@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { DiScrum } from "react-icons/di";
 
 export const skills: Skills[] = [
   {
@@ -88,5 +89,9 @@ export const skills: Skills[] = [
   {
     name: "Jira",
     icon: <SiJira className="h-7 w-7" />,
+  },
+  {
+    name: "Scrum",
+    icon: <DiScrum className="h-7 w-7" />,
   },
 ];

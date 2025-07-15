@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeIn, scaleIn } from "@/utils/animations";
 import ProfileImg from "@/../public/img/profile.png";
+import SkillsCarousel from "../shared/SkillsCarousel";
 
 export default function Hero() {
   return (
@@ -47,6 +48,7 @@ export default function Hero() {
             Frontend Developer | Líder Técnica| Impulsora de soluciones de
             calidad
           </motion.p>
+          <SkillsCarousel />
           <motion.div
             className="flex justify-center space-x-4 mb-8"
             {...fadeInUp}
