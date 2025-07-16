@@ -2,7 +2,7 @@ import { timelineData } from "@/contents/timeline";
 
 const About = () => {
   return (
-    <div className="min-h-screen py-6 flex flex-col justify-center sm:py-12">
+    <section className="min-h-screen pt-28 flex flex-col justify-center">
       <div className="py-3 max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-12">
         <div className="relative text-gray-700 antialiased text-sm font-semibold">
           {/* Línea vertical */}
@@ -40,7 +40,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -9,7 +9,7 @@ import Titles from "@/utils/Titles";
 
 export default function Resources() {
   return (
-    <section className="container max-w-7xl mx-auto py-12">
+    <section className="container max-w-7xl mx-auto min-h-[80vh] pt-28">
       <Titles text={"Recursos"} />
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"

@@ -59,7 +59,7 @@ const contactItems = [
 
 export default function Contact() {
   return (
-    <div className="container max-w-4xl mx-auto py-20">
+    <section className="container max-w-4xl mx-auto min-h-[80vh] pt-28">
       <Titles text={"Contactame"} />
       <motion.div
         className="space-y-8"
@@ -94,6 +94,6 @@ export default function Contact() {
           ))}
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 }

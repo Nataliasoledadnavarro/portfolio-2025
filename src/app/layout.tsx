@@ -1,22 +1,6 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "@/globals.css";
-import { ThemeProvider } from "../context/ThemeContext";
-import Navbar from "../components/shared/Navbar";
-import Footer from "../components/shared/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap", // Optimización de carga de fuentes
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
+import ClientLayout from "./ClientLayout";
 
 export const metadata: Metadata = {
   title: {
@@ -87,25 +71,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="es" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#ffeb3b" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased transition-colors duration-300 dark:bg-dark`}
-      >
-        <ThemeProvider>
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+  return <ClientLayout>{children}</ClientLayout>;
 }

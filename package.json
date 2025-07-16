@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+   "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -19,11 +20,13 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@next/bundle-analyzer": "^15.4.1",
     "@tailwindcss/postcss": "^4.1.11",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
+    "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
     "postcss": "^8.5.6",

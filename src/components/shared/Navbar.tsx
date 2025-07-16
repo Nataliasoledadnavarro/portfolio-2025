@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="container max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-xl font-bold dark:text-primary">
-            NataliaDev&reg;
+            NataliaDev
           </Link>
 
           {/* Desktop Menu */}
@@ -60,6 +60,7 @@ const Navbar = () => {
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-primary transition-colors"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="Toggle dark mode"
             >
               {theme === "dark" ? (
                 <SunIcon className="h-5 w-5" />
@@ -75,11 +76,12 @@ const Navbar = () => {
             onClick={toggleMobileMenu}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
+            aria-label="Toggle mobile menu"
           >
             {isMobileMenuOpen ? (
-              <XMarkIcon className="h-6 w-6" />
+              <XMarkIcon className="h-6 w-6 dark:text-primary" />
             ) : (
-              <Bars3Icon className="h-6 w-6" />
+              <Bars3Icon className="h-6 w-6 dark:text-primary" />
             )}
           </motion.button>
         </div>
@@ -104,7 +106,7 @@ const Navbar = () => {
                   >
                     <Link
                       href={item.href}
-                      className="block py-2 hover:text-primary transition-colors"
+                      className="block py-2 hover:text-primary transition-colors dark:text-primary dark:hover:text-white"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.label}
@@ -121,7 +123,8 @@ const Navbar = () => {
                       toggleTheme();
                       setIsMobileMenuOpen(false);
                     }}
-                    className="flex items-center py-2 hover:text-primary transition-colors"
+                    className="flex items-center py-2 hover:text-primary transition-colors dark:text-primary dark:hover:text-white"
+                    aria-label="Toggle dark mode"
                   >
                     {theme === "dark" ? (
                       <>

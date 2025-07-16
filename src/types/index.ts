@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { Skills } from '@/types/index';
 export interface Project {
     title: string;
     description: string;

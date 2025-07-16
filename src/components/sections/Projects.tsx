@@ -9,7 +9,7 @@ import Titles from "@/utils/Titles";
 
 export default function Projects() {
   return (
-    <section className="py-20">
+    <section className="pt-28">
       <div className="container max-w-7xl mx-auto px-4">
         <Titles text={"Proyectos iniciales"} />
         <motion.div
