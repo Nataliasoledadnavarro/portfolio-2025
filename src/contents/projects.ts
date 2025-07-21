@@ -13,8 +13,8 @@ export const projects: Project[] = [
     title: 'Controlador de gastos',
     description: 'Ahorradas 💰 es una aplicación web que permite registrar ingresos y egresos, organizar gastos por categoría y visualizar balances y reportes dinámicos. Utiliza almacenamiento local y cuenta con diseño responsive. Participé activamente en el desarrollo, la gestión de tareas y el control de versiones, trabajando en equipo bajo metodología ágil.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bulma'],
-    githubLink: 'https://github.com',
-    demoLink: 'https://github.com/Nataliasoledadnavarro/AhorrAdas',
+    githubLink: 'https://github.com/Nataliasoledadnavarro/AhorrAdas',
+    demoLink: 'https://nataliasoledadnavarro.github.io/AhorrAdas',
     image: Expense_control,
   },
   {

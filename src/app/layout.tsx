@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://natalia-navarro.vercel.app"), // Cambia por mi dominio
+  metadataBase: new URL("https://natalia-navarro.vercel.app"),
   alternates: {
     canonical: "/",
   },
