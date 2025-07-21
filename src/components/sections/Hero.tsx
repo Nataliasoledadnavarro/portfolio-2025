@@ -1,12 +1,14 @@
 "use client";
-
-import Link from "next/link";
+//Routes
+import { PROJECTS_ROUTE, CONTACT_ROUTE } from "@/lib/routes";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeIn, scaleIn } from "@/utils/animations";
 import ProfileImg from "@/../public/img/profile.png";
 import SkillsCarousel from "../shared/SkillsCarousel";
+import ButtonLink from "../shared/ButtonLink";
+import IconButton from "../shared/IconButton";
 
 export default function Hero() {
   return (
@@ -55,48 +57,34 @@ export default function Hero() {
             {...fadeInUp}
             transition={{ delay: 0.5 }}
           >
-            <motion.a
+            <IconButton
               href="https://github.com/Nataliasoledadnavarro"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FaGithub />
-            </motion.a>
-            <motion.a
+              ariaLabel="Github"
+              icon={<FaGithub />}
+              hovered={true}
+            />
+            <IconButton
               href="https://www.linkedin.com/in/nataliasoledadnavarro/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <FaLinkedin />
-            </motion.a>
+              ariaLabel="Linkedin"
+              icon={<FaLinkedin />}
+              hovered={true}
+            />
           </motion.div>
           <motion.div
             className="flex flex-col md:flex-row justify-center gap-4"
             {...fadeInUp}
             transition={{ delay: 0.6 }}
           >
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link
-                href="/projects"
-                className="bg-primary inline-block w-full text-gray-800  md:w-auto px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors"
-              >
-                Mis Proyectos
-              </Link>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link
-                href="/contact"
-                className=" inline-block w-full bg-gray-500  md:w-auto text-gray-800 dark:text-white px-8 py-3 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
-              >
-                Contactame
-              </Link>
-            </motion.div>
+            <ButtonLink
+              variant="primary"
+              url={PROJECTS_ROUTE}
+              text="Mis Proyectos"
+            />
+            <ButtonLink
+              variant="secondary"
+              url={CONTACT_ROUTE}
+              text="Contactame"
+            />
           </motion.div>
         </div>
       </div>

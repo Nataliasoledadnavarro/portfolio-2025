@@ -6,7 +6,7 @@ import "@/globals.css";
 import { ThemeProvider } from "../context/ThemeContext";
 import Navbar from "../components/shared/Navbar";
 import Footer from "../components/shared/Footer";
-import { LazyMotion, domAnimation } from "framer-motion"; // <-- Importar LazyMotion y domAnimation
+import { LazyMotion, domAnimation } from "framer-motion";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

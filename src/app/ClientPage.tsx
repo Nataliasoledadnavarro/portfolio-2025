@@ -1,8 +1,6 @@
 "use client";
 
-import React, { Suspense } from "react"; // Importar React y Suspense
-
-// Importaciones dinámicas para Lazy Loading de las secciones
+import React, { Suspense } from "react";
 import Hero from "../components/sections/Hero";
 const About = React.lazy(() => import("@/components/sections/About"));
 const Projects = React.lazy(() => import("../components/sections/Projects"));

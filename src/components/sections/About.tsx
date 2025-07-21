@@ -32,7 +32,7 @@ const About = () => {
                 </div>
 
                 {/* Icono centrado */}
-                <div className="rounded-full bg-primary border-white border-4 w-16 h-16 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                <div className="rounded-full bg-secondary border-white border-4 w-16 h-16 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                   {item.icon}
                 </div>
               </div>

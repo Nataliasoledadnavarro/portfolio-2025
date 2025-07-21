@@ -55,10 +55,10 @@ const nextConfig: NextConfig = {
 
   // ESLint y TypeScript configuraciones
   eslint: {
-    ignoreDuringBuilds: true, // Added update
+    ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true, // Added update
+    ignoreBuildErrors: true,
   },
 }
 

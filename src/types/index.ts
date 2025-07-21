@@ -42,3 +42,14 @@ export interface Skills {
   name: string;
   icon: ReactNode;
 }
+export interface ButtonLinkProps {
+  variant?: "primary" | "secondary" 
+  url: string
+  text: string
+}
+export interface IconButtonProps {
+  href: string
+  ariaLabel: string
+  icon: React.ReactNode 
+  hovered?: boolean
+}

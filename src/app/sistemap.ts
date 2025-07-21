@@ -1,4 +1,6 @@
 import type { MetadataRoute } from "next"
+import { PROJECTS_ROUTE, ABOUT_ROUTE, RESOURCES_ROUTE, CONTACT_ROUTE
+ } from "@/lib/routes"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://natalia-navarro.vercel.app" 
@@ -11,25 +13,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}${ABOUT_ROUTE}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/projects`,
+      url: `${baseUrl}${PROJECTS_ROUTE}`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
        {
-      url: `${baseUrl}/resources`,
+      url: `${baseUrl}${RESOURCES_ROUTE}`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrl}${CONTACT_ROUTE}`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,

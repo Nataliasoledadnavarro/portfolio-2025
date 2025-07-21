@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://natalia-navarro.vercel.app", // Cambia por mi dominio
+    url: "https://natalia-navarro.vercel.app", 
     title: "Natalia Navarro - Frontend Developer & Tech Lead",
     description:
       "Frontend Developer especializada en React, Next.js y liderazgo técnico. Experiencia en optimización de plataformas y desarrollo de equipos.",

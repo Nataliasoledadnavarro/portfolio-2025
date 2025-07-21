@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import IconButton from "./IconButton";
 
 export default function Footer() {
   return (
@@ -16,23 +17,18 @@ export default function Footer() {
           </div>
 
           <div className="flex space-x-6">
-            <a
+            <IconButton
               href="https://github.com/Nataliasoledadnavarro"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="dark:text-primary"
-            >
-              <FaGithub className="h-6 w-6" />
-            </a>
-
-            <a
+              ariaLabel="Github"
+              icon={<FaGithub />}
+              hovered={false}
+            />
+            <IconButton
               href="https://www.linkedin.com/in/nataliasoledadnavarro/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="dark:text-primary"
-            >
-              <FaLinkedin className="h-6 w-6" />
-            </a>
+              ariaLabel="Linkedin"
+              icon={<FaLinkedin />}
+              hovered={false}
+            />
           </div>
         </div>
       </div>
