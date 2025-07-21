@@ -36,7 +36,6 @@ Para configurar y ejecutar el proyecto en tu máquina local, sigue estos pasos:
     git clone https://github.com/Nataliasoledadnavarro/tu-portfolio-repo.git
     cd tu-portfolio-repo
     \`\`\`
-    *(Reemplaza `tu-portfolio-repo` con el nombre real de tu repositorio)*
 
 2.  **Instala las dependencias:**
     \`\`\`bash
