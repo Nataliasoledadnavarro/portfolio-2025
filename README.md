@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Mi Portfolio Profesional (Nueva Versión) - Natalia Navarro
 
-## Getting Started
+¡Bienvenido/a al repositorio de la **nueva versión** de mi portfolio personal! Este proyecto es una representación dinámica y actualizada de mi trayectoria como Frontend Developer y Tech Lead, diseñado para mostrar mis habilidades, proyectos y experiencia profesional.
 
-First, run the development server:
+## 🎯 Objetivo del Proyecto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+El objetivo principal de este portfolio es servir como una plataforma viva y en constante evolución. Esta nueva web ha sido creada para **actualizar y reemplazar mi portfolio anterior**. Actualmente, contiene **proyectos iniciales** que reflejan mis fundamentos y habilidades. Mi compromiso es **iterar y desarrollar continuamente nuevos proyectos**, los cuales se irán incorporando aquí para reflejar mi crecimiento y mis capacidades más avanzadas.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tecnologías Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este proyecto está construido con las últimas tecnologías para asegurar un rendimiento óptimo, una excelente experiencia de usuario y una fácil mantenibilidad:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*   **Next.js 15 (App Router)**
+*   **React 19**
+*   **TypeScript**
+*   **Tailwind CSS 4**
+*   **Framer Motion**
+*   **Heroicons / React Icons**
 
-## Learn More
+## ✨ Características Principales
 
-To learn more about Next.js, take a look at the following resources:
+*   **Optimización SEO**: Configuración de metadatos, sitemap y robots.txt para una mejor visibilidad en motores de búsqueda.
+*   **Alto Rendimiento**: Lazy loading de componentes, optimización de imágenes con `next/image` y análisis de bundle para reducir el tamaño del JavaScript.
+*   **Diseño Responsivo**
+*   **Modo Oscuro/Claro**
+*   **Animaciones Fluidas**
+*   **Carrusel de Habilidades**
+*   **Componentes Reutilizables**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💻 Instalación y Ejecución Local
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para configurar y ejecutar el proyecto en tu máquina local, sigue estos pasos:
 
-## Deploy on Vercel
+1.  **Clona el repositorio:**
+    \`\`\`bash
+    git clone https://github.com/Nataliasoledadnavarro/tu-portfolio-repo.git
+    cd tu-portfolio-repo
+    \`\`\`
+    *(Reemplaza `tu-portfolio-repo` con el nombre real de tu repositorio)*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Instala las dependencias:**
+    \`\`\`bash
+    npm install
+    # o
+    yarn install
+    # o
+    pnpm install
+    \`\`\`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Ejecuta el servidor de desarrollo:**
+    \`\`\`bash
+    npm run dev
+    # o
+    yarn dev
+    # o
+    pnpm dev
+    \`\`\`
+    El portfolio estará disponible en `http://localhost:3000`.
+
+## 📂 Estructura del Proyecto
+
+La estructura del proyecto sigue las convenciones del App Router de Next.js:
+
+
+## 🌐 Despliegue
+
+Este portfolio está desplegado en [Vercel](https://vercel.com/), lo que permite una integración continua y despliegues automáticos con cada push al repositorio principal.
+
+## 🔗 Acceso al Proyecto
+
+Puedes ver el portfolio en vivo aquí:
+[https://natalia-navarro.vercel.app](https://natalia-navarro.vercel.app)
+
+## 🤝 Contribución
+
+Aunque este es un portfolio personal, cualquier sugerencia o mejora es bienvenida. Si encuentras algún error o tienes ideas para nuevas características, no dudes en abrir un "Issue" o contactarme directamente.
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## ✉️ Contacto
+
+Si tienes alguna pregunta, propuesta de colaboración o simplemente quieres saludar, no dudes en contactarme:
+
+*   **Email**: nataliasoledadnavarro@gmail.com
+*   **LinkedIn**: [Natalia Soledad Navarro](https://www.linkedin.com/in/nataliasoledadnavarro/)
+*   **GitHub**: [Nataliasoledadnavarro](https://github.com/Nataliasoledadnavarro)
+
+---
