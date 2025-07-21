@@ -10,7 +10,7 @@ export default function Footer() {
             <Link href="/" className="text-xl font-bold dark:text-primary">
               NataliaDev
             </Link>
-            <p className="text-sm dark:text-secondary mt-2">
+            <p className="text-sm dark:text-primary mt-2">
               © {new Date().getFullYear()} NataliaDev. All rights reserved.
             </p>
           </div>
@@ -20,7 +20,7 @@ export default function Footer() {
               href="https://github.com/Nataliasoledadnavarro"
               target="_blank"
               rel="noopener noreferrer"
-              className="dark:text-secondary"
+              className="dark:text-primary"
             >
               <FaGithub className="h-6 w-6" />
             </a>
@@ -29,7 +29,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/nataliasoledadnavarro/"
               target="_blank"
               rel="noopener noreferrer"
-              className="dark:text-secondary"
+              className="dark:text-primary"
             >
               <FaLinkedin className="h-6 w-6" />
             </a>

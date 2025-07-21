@@ -17,7 +17,7 @@ const contactItems = [
     content: (
       <a
         href="mailto:nataliasoledadnavarro@gmail.com"
-        className="text-gray-800 dark:text-secondary"
+        className="text-gray-800 dark:text-primary"
       >
         nataliasoledadnavarro@gmail.com
       </a>
@@ -27,7 +27,7 @@ const contactItems = [
     icon: <FaPhone className="dark:text-primary w-5 h-5" />,
     title: "Teléfono",
     content: (
-      <a href="tel:+1161737665" className="text-gray-800 dark:text-secondary">
+      <a href="tel:+1161737665" className="text-gray-800 dark:text-primary">
         11 6173 7665
       </a>
     ),
@@ -40,7 +40,7 @@ const contactItems = [
         href="https://wa.me/5491161737665"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-gray-800 dark:text-secondary hover:text-green-500"
+        className="text-gray-800 dark:text-primary hover:text-green-500"
       >
         Enviar mensaje
       </a>
@@ -50,7 +50,7 @@ const contactItems = [
     icon: <FaMapMarkerAlt className="dark:text-primary w-5 h-5" />,
     title: "Ubicación",
     content: (
-      <p className="text-gray-800 dark:text-secondary">
+      <p className="text-gray-800 dark:text-primary">
         San Martín, Buenos Aires
       </p>
     ),
@@ -68,7 +68,7 @@ export default function Contact() {
         animate="animate"
       >
         <motion.p
-          className="text-center dark:text-secondary max-w-xl mx-auto"
+          className="text-center dark:text-primary max-w-xl mx-auto"
           variants={fadeInUp}
         >
           Siempre es un buen momento para crear algo nuevo y formar parte de

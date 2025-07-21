@@ -35,7 +35,7 @@ export default function Resources() {
               </motion.h2>
 
               <motion.p
-                className="text-gray-700 dark:text-secondary mb-4"
+                className="text-gray-700 dark:text-primary mb-4"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}

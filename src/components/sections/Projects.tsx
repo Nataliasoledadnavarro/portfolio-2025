@@ -77,7 +77,7 @@ export default function Projects() {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 dark:text-secondary  transition-colors"
+                  className="flex items-center gap-2 dark:text-primary transition-colors"
                   whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -88,7 +88,7 @@ export default function Projects() {
                   href={project.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 dark:text-secondary transition-colors"
+                  className="flex items-center gap-2 dark:text-primary transition-colors"
                   whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}
                 >
