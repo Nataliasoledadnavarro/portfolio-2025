@@ -1,18 +1,18 @@
 import { ReactNode } from "react";
 export interface Project {
-    title: string;
-    description: string;
-    technologies: string[];
-    githubLink: string;
-    demoLink: string;
-    image: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  githubLink: string;
+  demoLink: string;
+  image: string;
 }
 
 export interface Resources {
-    title: string;
-    excerpt: string;
-    date: string;
-    slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  slug: string;
 }
 
 export interface MenuItem {
@@ -43,13 +43,20 @@ export interface Skills {
   icon: ReactNode;
 }
 export interface ButtonLinkProps {
-  variant?: "primary" | "secondary" 
-  url: string
-  text: string
+  variant?: "primary" | "secondary";
+  url: string;
+  text: string;
 }
 export interface IconButtonProps {
-  href: string
-  ariaLabel: string
-  icon: React.ReactNode 
-  hovered?: boolean
+  href: string;
+  ariaLabel: string;
+  icon: React.ReactNode;
+  hovered?: boolean;
+}
+
+export interface ButtonDownloadProps {
+  file: string;
+  icon: React.ReactNode;
+  label?: string;
+  download: string;
 }

@@ -1,14 +1,19 @@
 "use client";
+
+import Image from "next/image";
 //Routes
 import { PROJECTS_ROUTE, CONTACT_ROUTE } from "@/lib/routes";
-import Image from "next/image";
+//Icons
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { fadeInUp, fadeIn, scaleIn } from "@/utils/animations";
+//Components
 import ProfileImg from "@/../public/img/profile.png";
 import SkillsCarousel from "../shared/SkillsCarousel";
 import ButtonLink from "../shared/ButtonLink";
 import IconButton from "../shared/IconButton";
+import ButtonDownload from "../shared/ButtonDownload";
 
 export default function Hero() {
   return (
@@ -68,6 +73,13 @@ export default function Hero() {
               ariaLabel="Linkedin"
               icon={<FaLinkedin />}
               hovered={true}
+            />
+
+            <ButtonDownload
+              file="/img/CV-Natalia-Navarro.pdf"
+              icon={<FiDownload />}
+              label="Descargar CV"
+              download="CV-Natalia-Navarro.pdf"
             />
           </motion.div>
           <motion.div
