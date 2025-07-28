@@ -42,7 +42,7 @@ const structuredData = {
   name: "Natalia Navarro",
   jobTitle: "Frontend Developer & Tech Lead",
   description:
-    "Frontend Developer especializada en React, Next.js y liderazgo técnico",
+    "Frontend Developer especializada en React, Next.js y liderazgo.",
   url: "https://natalia-navarro.vercel.app",
   image: "https://natalia-navarro.vercel.app/public/img/profile.png",
   sameAs: [

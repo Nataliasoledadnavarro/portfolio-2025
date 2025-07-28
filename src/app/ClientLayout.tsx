@@ -28,8 +28,7 @@ export default function ClientLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/public/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#ffeb3b" />
@@ -40,8 +39,6 @@ export default function ClientLayout({
       >
         <ThemeProvider>
           <LazyMotion features={domAnimation}>
-            {" "}
-            {/* <-- Envuelve tu aplicación aquí */}
             <Navbar />
             {children}
             <Footer />
