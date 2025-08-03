@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-export interface Project {
+export interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
@@ -7,7 +7,15 @@ export interface Project {
   demoLink: string;
   image: string;
 }
-
+export interface NewProjectProps {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  tag?: string;
+  githubLink: string;
+  demoLink: string;
+}
 export interface Resources {
   title: string;
   excerpt: string;
@@ -60,3 +68,4 @@ export interface ButtonDownloadProps {
   label?: string;
   download: string;
 }
+

@@ -7,8 +7,8 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
 } from "react-icons/fa";
-import { fadeInUp, fadeIn } from "@/utils/animations";
-import Titles from "@/utils/Titles";
+import { fadeInUp, fadeIn } from "@/utils/styles/animations";
+import Titles from "@/components/shared/Titles";
 
 const contactItems = [
   {

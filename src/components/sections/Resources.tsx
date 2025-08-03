@@ -3,9 +3,9 @@
 import { resources } from "@/contents/resources";
 import { FaCalendarAlt, FaExternalLinkAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { fadeInUp, staggerContainer } from "@/utils/animations";
+import { fadeInUp, staggerContainer } from "@/utils/styles/animations";
 import { format, parseISO } from "date-fns";
-import Titles from "@/utils/Titles";
+import Titles from "@/components/shared/Titles";
 
 export default function Resources() {
   return (

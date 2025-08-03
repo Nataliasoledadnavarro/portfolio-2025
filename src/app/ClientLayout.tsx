@@ -4,8 +4,8 @@ import type React from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/globals.css";
 import { ThemeProvider } from "../context/ThemeContext";
-import Navbar from "../components/shared/Navbar";
-import Footer from "../components/shared/Footer";
+import Navbar from "../components/layout/Navbar";
+import Footer from "../components/layout/Footer";
 import { LazyMotion, domAnimation } from "framer-motion";
 
 const geistSans = Geist({
