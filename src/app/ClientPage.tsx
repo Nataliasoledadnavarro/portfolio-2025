@@ -6,6 +6,7 @@ const About = React.lazy(() => import("@/components/sections/About"));
 const Projects = React.lazy(() => import("../components/sections/Projects"));
 const Resources = React.lazy(() => import("../components/sections/Resources"));
 const Contact = React.lazy(() => import("../components/sections/Contact"));
+const NewProjects = React.lazy(() => import("../components/sections/NewProjects"));
 
 const LoadingFallback = () => (
   <div className="flex flex-col items-center justify-center h-64">
@@ -42,7 +43,7 @@ const structuredData = {
   name: "Natalia Navarro",
   jobTitle: "Frontend Developer & Tech Lead",
   description:
-    "Frontend Developer especializada en React, Next.js y liderazgo técnico",
+    "Frontend Developer especializada en React, Next.js y liderazgo.",
   url: "https://natalia-navarro.vercel.app",
   image: "https://natalia-navarro.vercel.app/public/img/profile.png",
   sameAs: [
@@ -78,6 +79,7 @@ export default function ClientPage() {
         </Suspense>
 
         <Suspense fallback={<LoadingFallback />}>
+        <NewProjects />
           <Projects />
         </Suspense>
 

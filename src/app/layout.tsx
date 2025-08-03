@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | Natalia Navarro",
   },
   description:
-    "Frontend Developer especializada en React, Next.js y liderazgo técnico. Experiencia en optimización de plataformas y desarrollo de equipos de alto rendimiento.",
+    "Frontend Developer especializada en React, Next.js y liderazgo. Experiencia en optimización de plataformas y desarrollo de equipos de alto rendimiento.",
   keywords: [
     "Frontend Developer",
     "React Developer",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     url: "https://natalia-navarro.vercel.app", 
     title: "Natalia Navarro - Frontend Developer & Tech Lead",
     description:
-      "Frontend Developer especializada en React, Next.js y liderazgo técnico. Experiencia en optimización de plataformas y desarrollo de equipos.",
+      "Frontend Developer especializada en React, Next.js y liderazgo. Experiencia en optimización de plataformas y desarrollo de equipos.",
     siteName: "Natalia Navarro Portfolio",
     images: [
       {

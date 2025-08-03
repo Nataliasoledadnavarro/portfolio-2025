@@ -1,4 +1,6 @@
-import { Project } from "@/types/index";
+// Types
+import { ProjectCardProps } from "@/types/index";
+//Images
 import Expense_control from '../../public/img/expense_control.svg'
 import Movie from '../../public/img/movies.svg'
 import Search from '../../public/img/search.svg'
@@ -8,7 +10,8 @@ import SearchRickMorty from '../../public/img/app.svg'
 import Code from '../../public/img/code.svg'
 import ImgUTC from '../../public/img/utc.svg'
 
-export const projects: Project[] = [
+
+export const projects: ProjectCardProps[] = [
   {
     title: 'Controlador de gastos',
     description: 'Ahorradas 💰 es una aplicación web que permite registrar ingresos y egresos, organizar gastos por categoría y visualizar balances y reportes dinámicos. Utiliza almacenamiento local y cuenta con diseño responsive. Participé activamente en el desarrollo, la gestión de tareas y el control de versiones, trabajando en equipo bajo metodología ágil.',

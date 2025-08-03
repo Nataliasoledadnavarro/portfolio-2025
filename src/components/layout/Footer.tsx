@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import IconButton from "./IconButton";
+import IconButton from "@/components/ui/IconButton";
 
 export default function Footer() {
   return (

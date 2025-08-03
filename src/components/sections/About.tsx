@@ -20,7 +20,7 @@ const About = () => {
                       item.side === "right" ? "sm:pl-8" : "sm:pr-8"
                     }`}
                   >
-                    <div className="p-4 bg-primary rounded shadow">
+                    <div className="p-4 bg-primary rounded shadow mb-1">
                       <h3 className="font-bold text-lg mb-1 mt-6 sm:mt-0">
                         {item.title}
                       </h3>
@@ -30,7 +30,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="rounded-full bg-secondary border-white border-4 w-16 h-16 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                <div className="rounded-full bg-secondary border-white dark:border-dark border-4 w-16 h-16 absolute left-1/2 -translate-y-6 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                   {item.icon}
                 </div>
               </div>

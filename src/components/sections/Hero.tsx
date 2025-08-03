@@ -7,13 +7,13 @@ import { PROJECTS_ROUTE, CONTACT_ROUTE } from "@/lib/routes";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
-import { fadeInUp, fadeIn, scaleIn } from "@/utils/animations";
+import { fadeInUp, fadeIn, scaleIn } from "@/utils/styles/animations";
 //Components
 import ProfileImg from "@/../public/img/profile.png";
-import SkillsCarousel from "../shared/SkillsCarousel";
-import ButtonLink from "../shared/ButtonLink";
-import IconButton from "../shared/IconButton";
-import ButtonDownload from "../shared/ButtonDownload";
+import SkillsCarousel from "../ui/SkillsCarousel";
+import ButtonLink from "../ui/ButtonLink";
+import IconButton from "../ui/IconButton";
+import ButtonDownload from "../ui/ButtonDownload";
 
 export default function Hero() {
   return (

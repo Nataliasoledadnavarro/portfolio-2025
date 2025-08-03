@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import ClientPage from "./ClientPage";
 
 export const metadata: Metadata = {
-  title: "Inicio",
+  title: "Portfolio",
   description:
-    "Portfolio de Natalia Navarro - Frontend Developer especializada en React, Next.js y liderazgo técnico. Descubre mis proyectos y experiencia profesional.",
+    "Portfolio de Natalia Navarro - Frontend Developer especializada en React, Next.js y liderazgo. Descubre mis proyectos y experiencia profesional.",
   openGraph: {
     title: "Natalia Navarro - Frontend Developer & Tech Lead",
     description:
-      "Portfolio profesional con proyectos, recursos y liderazgo técnico.",
+      "Portfolio profesional con proyectos, recursos y liderazgo.",
     url: "https://natalia-navarro.vercel.app",
     images: [
       {
