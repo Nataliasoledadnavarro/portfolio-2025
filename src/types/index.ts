@@ -12,7 +12,7 @@ export interface NewProjectProps {
   title: string;
   description: string;
   image: string;
-  tag?: string;
+  tag?: { id: string; name: string };
   githubLink: string;
   demoLink: string;
 }

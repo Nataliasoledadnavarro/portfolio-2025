@@ -37,7 +37,7 @@ const NewProjectCard = ({project}: Props) => {
       <div className="w-full md:w-2/3 flex flex-col space-y-2 p-3">
         <div className="flex justify-between items-start">
           {project.tag && (
-            <Chip label={project.tag} variant="primary" size="md" />
+            <Chip label={project.tag.name} variant={project.tag.id === 'NEW' ? 'primary' : 'secondary'} size="md" />
           )}
           <div className="flex items-center gap-4">
             {project.githubLink && (
