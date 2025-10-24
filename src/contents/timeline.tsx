@@ -58,7 +58,7 @@ export const timelineData: TimeLineItem[] = [
     icon: <FaSpaceAwesome className="h-7 w-7 text-primary" />,
     title: "Presente y futuro",
     description:
-      "Sigo formándome y desarrollando proyectos que combinen impacto técnico y valor humano, con visión a largo plazo y compromiso con la mejora continua.",
+      "Continúo expandiendo mi stack técnico en un curso de Java, mientras participo activamente en nuevos proyectos React. Siempre en evolución, buscando aportar lo mejor de mí en cada desafío y fortaleciendo mis habilidades de liderazgo.",
     year: "Actualidad",
   },
 ];

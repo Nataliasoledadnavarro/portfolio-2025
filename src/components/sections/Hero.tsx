@@ -53,7 +53,7 @@ export default function Hero() {
             {...fadeInUp}
             transition={{ delay: 0.4 }}
           >
-            Frontend Developer | Líder Técnica| Impulsora de soluciones
+            Frontend Developer | Liderazgo | Impulsora de soluciones
             digitales
           </motion.p>
           <SkillsCarousel />
