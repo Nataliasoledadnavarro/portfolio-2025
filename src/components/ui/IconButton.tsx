@@ -12,7 +12,7 @@ const IconButton = ({ href, ariaLabel, icon, hovered = true }: IconButtonProps) 
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-2xl hover:text-primary dark:text-white  transition-colors"
+      className="text-2xl hover:text-primary dark:text-white transition-colors"
       whileHover={hoverProps} 
       whileTap={tapProps} 
       aria-label={ariaLabel}

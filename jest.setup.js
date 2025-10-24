@@ -52,16 +52,7 @@ jest.mock("next/link", () => ({
   },
 }));
 
-// Mock componentes problemáticos para tests
-jest.mock("@/components/ui/IconButton", () => ({
-  __esModule: true,
-  default: ({ href, ariaLabel, icon, children }) => (
-    <a href={href} aria-label={ariaLabel}>
-      {icon}
-      {children}
-    </a>
-  ),
-}));
+// Mock componentes problemáticos para tests 
 
 jest.mock("@/components/ui/SkillsCarousel", () => ({
   __esModule: true,
@@ -113,6 +104,17 @@ jest.mock("framer-motion", () => ({
         ...domProps
       } = props;
       return <button {...domProps}>{children}</button>;
+    },
+    a: ({ children, ...props }) => {
+      const {
+        whileHover,
+        whileTap,
+        initial,
+        animate,
+        transition,
+        ...domProps
+      } = props;
+      return <a {...domProps}>{children}</a>;
     },
     h1: ({ children, ...props }) => {
       const {

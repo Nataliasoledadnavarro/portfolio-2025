@@ -48,7 +48,7 @@ describe("ThemeContext", () => {
     expect(screen.getByTestId("current-theme")).toHaveTextContent("dark");
   });
 
-  // ✅ Test de toggle functionality
+  // Test de toggle functionality
   it("toggles between light and dark themes", () => {
     // Primer render - simular que está en dark mode inicialmente
     (
@@ -79,7 +79,7 @@ describe("ThemeContext", () => {
     );
   });
 
-  // ✅ Test de persistencia en localStorage
+  // Test de persistencia en localStorage
   it("saves theme preference to localStorage", () => {
     // Simular que inicialmente está en dark mode
     (
@@ -99,7 +99,7 @@ describe("ThemeContext", () => {
     expect(global.localStorage.setItem).toHaveBeenCalledWith("theme", "light");
   });
 
-  // ✅ Test de carga desde localStorage
+  // Test de carga desde localStorage
   it("loads theme from localStorage on mount", () => {
     // Mock localStorage con tema guardado
     (global.localStorage.getItem as jest.Mock).mockReturnValue("light");
