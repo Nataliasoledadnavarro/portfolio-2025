@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 // styles
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 // icons
-import {FaExternalLinkAlt, FaGithub} from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 // types
-import type {NewProjectProps} from "@/types/index";
+import type { NewProjectProps } from "@/types/index";
 // components
 import Chip from "@/components/ui/Chip";
 
@@ -14,12 +14,13 @@ interface Props {
   project: NewProjectProps;
 }
 
-const NewProjectCard = ({project}: Props) => {
+const NewProjectCard = ({ project }: Props) => {
   return (
     <motion.div
       className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-md shadow-primary dark:shadow-secondary p-3 max-w-xs md:max-w-3xl mx-auto  bg-white dark:bg-dark/40"
-      whileHover={{scale: 1.02}}
-      transition={{type: "spring", stiffness: 300}}>
+      whileHover={{ scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       {/* Img */}
       <div className="w-full md:w-1/3 bg-white dark:bg-dark/30 grid place-items-center rounded-xl overflow-hidden">
         <div className="relative w-full h-48 md:h-56">
@@ -37,7 +38,13 @@ const NewProjectCard = ({project}: Props) => {
       <div className="w-full md:w-2/3 flex flex-col space-y-2 p-3">
         <div className="flex justify-between items-start">
           {project.tag && (
-            <Chip label={project.tag.name} variant={project.tag.id === 'NEW' ? 'primary' : 'secondary'} size="md" />
+            <Chip
+              label={project.tag.name}
+              variant={
+                project.tag
+                  .variant as keyof typeof import("@/components/ui/Chip").colorVariants
+              }
+            />
           )}
           <div className="flex items-center gap-4">
             {project.githubLink && (
@@ -45,7 +52,8 @@ const NewProjectCard = ({project}: Props) => {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 dark:text-white hover:text-primary">
+                className="text-gray-600 dark:text-white hover:text-primary"
+              >
                 <FaGithub className="w-5 h-5" />
               </a>
             )}
@@ -54,14 +62,15 @@ const NewProjectCard = ({project}: Props) => {
                 href={project.demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 dark:text-white hover:text-primary">
+                className="text-gray-600 dark:text-white hover:text-primary"
+              >
                 <FaExternalLinkAlt className="w-5 h-5" />
               </a>
             )}
           </div>
         </div>
 
-        <h3 className="font-black text-gray-800 dark:text-white md:text-2xl text-xl">
+        <h3 className="font-black text-gray-800 dark:text-white text-xl">
           {project.title}
         </h3>
 

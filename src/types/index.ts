@@ -7,12 +7,13 @@ export interface ProjectCardProps {
   demoLink: string;
   image: string;
 }
+import type { colorVariants } from "@/components/ui/Chip";
 export interface NewProjectProps {
   id: number;
   title: string;
   description: string;
   image: string;
-  tag?: { id: string; name: string };
+  tag?: { variant: keyof typeof colorVariants; name: string };
   githubLink: string;
   demoLink: string;
 }

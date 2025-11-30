@@ -1,16 +1,16 @@
-import {NewProjectProps} from "@/types";
+import { NewProjectProps } from "@/types";
 
 export const newProjects: NewProjectProps[] = [
   {
     id: 1,
-    title: "React 19 Auth + Dashboard Starter",
+    title: "Admin Panel - Juegos de Mesa",
     description:
-      "Starter basado en mi template React 19 + Vite, con login simulado, rutas protegidas y estructura lista para escalar hacia un dashboard.",
-    image: "/img/analytics.svg",
-    tag: {id: 'IN_PROGRESS', name: "En progreso"},
+      "Panel para gestionar productos y categorías de juegos de mesa. Next.js + React 19 y backend Java. Dashboard, CRUD, notificaciones y UI moderna.",
+    image: "/img/boardgames-admin.svg",
+    tag: {variant: 'secondary', name: "Fullstack"},
     githubLink:
-      "https://github.com/Nataliasoledadnavarro/react19-auth-dashboard",
-    demoLink: "",
+      "https://github.com/Nataliasoledadnavarro/boardgames-admin-panel-fe",
+    demoLink: "https://boardgames-admin-panel-fe.vercel.app/",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const newProjects: NewProjectProps[] = [
     description:
       "Template base para proyectos con React 19, TypeScript, Tailwind CSS y Vite. Ideal para empezar rápido con las nuevas features.",
     image: "/img/template.svg",
-    tag: {id: 'NEW', name: "Nuevo"},
+    tag: {variant: 'primary', name: "Nuevo"},
     githubLink: "https://github.com/Nataliasoledadnavarro/template_react_19",
     demoLink: "",
   },
