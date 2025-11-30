@@ -61,7 +61,7 @@ const NewProjectCard = ({project}: Props) => {
           </div>
         </div>
 
-        <h3 className="font-black text-gray-800 dark:text-white md:text-2xl text-xl">
+        <h3 className="font-black text-gray-800 dark:text-white text-xl">
           {project.title}
         </h3>
 
