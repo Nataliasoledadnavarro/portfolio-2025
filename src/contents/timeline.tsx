@@ -1,8 +1,11 @@
 import { TimeLineItem } from "@/types";
-import { FaLaptopCode, FaReact, FaTools, FaRegHandshake } from "react-icons/fa";
-import { FaSpaceAwesome } from "react-icons/fa6";
+import { FaLaptopCode, FaReact, FaCode, FaRegHandshake } from "react-icons/fa";
 import { BsPersonWorkspace } from "react-icons/bs";
+import { TbMapStar } from "react-icons/tb";
 import { MdGroups2 } from "react-icons/md";
+import { GiBrain } from "react-icons/gi";
+import { IoSparklesSharp } from "react-icons/io5";
+import { LuBrainCircuit } from "react-icons/lu";
 
 export const timelineData: TimeLineItem[] = [
   {
@@ -18,15 +21,15 @@ export const timelineData: TimeLineItem[] = [
     icon: <FaReact className="h-7 w-7 text-primary" />,
     title: "Formación intensiva",
     description:
-      "Me capacité formalmente en desarrollo web con cursos de JavaScript, React y otras tecnologías.",
+      "Me capacité en desarrollo web con foco en JavaScript, React y tecnologías frontend.",
     year: "2022",
   },
   {
     side: "left",
     icon: <BsPersonWorkspace className="h-7 w-7 text-primary" />,
-    title: "Primer experiencia profesional",
+    title: "Primera experiencia profesional IT",
     description:
-      "Ingresé al equipo de Eldar como desarrolladora frontend, participando desde cero en la creación de una plataforma web robusta y escalable, con foco en la experiencia del usuario.",
+      "Me uní a Eldar como frontend developer, participando en el desarrollo de múltiples plataformas de gestión interna que continúan en producción, y posteriormente en proyectos estratégicos para clientes.",
     year: "2022",
   },
   {
@@ -34,31 +37,55 @@ export const timelineData: TimeLineItem[] = [
     icon: <MdGroups2 className="h-7 w-7 text-primary" />,
     title: "Liderazgo técnico",
     description:
-      "Formé y lideré un equipo de frontend con foco en calidad, buenas prácticas y crecimiento constante.",
+      "Lideré el equipo frontend impulsando calidad, buenas prácticas y crecimiento profesional.",
     year: "2024",
   },
   {
     side: "left",
     icon: <FaRegHandshake className="h-7 w-7 text-primary" />,
-    title: "Gestión de proyectos y soporte a cliente",
+    title: "Gestión y soporte a cliente",
     description:
-      "Colaboré activamente con Project Managers en la coordinación de tres proyectos estratégicos para cliente, participando en reuniones de seguimiento y brindando soporte técnico directo.",
+      "Colaboré con PMs en la coordinación de proyectos estratégicos y soporte técnico a clientes.",
     year: "2024-2025",
   },
   {
     side: "right",
-    icon: <FaTools className="h-7 w-7 text-primary" />,
+    icon: <FaCode className="h-7 w-7 text-primary" />,
     title: "Desarrollo de soluciones",
     description:
-      "Diseñé e implementé soluciones clave para plataformas digitales en producción. Además, impulsé estrategias de optimización como la creación de templates base y una librería de utilidades, con foco en la eficiencia del desarrollo y el fortalecimiento del equipo.",
+      "Implementé soluciones para plataformas en producción y optimicé procesos con templates y utilidades reutilizables.",
     year: "2024–2025",
   },
   {
     side: "left",
-    icon: <FaSpaceAwesome className="h-7 w-7 text-primary" />,
+    icon: <IoSparklesSharp className="h-7 w-7 text-primary" />,
+    title: "Desarrollo + IA",
+    description:
+      "Me sumé a un proyecto fintech donde diseñé workflows con IA para frontend, luego adoptados por otros equipos.",
+    year: "2026 - Actualidad",
+  },
+  {
+    side: "right",
+    icon: <GiBrain className="h-7 w-7 text-primary" />,
+    title: "Diplomatura en IA Generativa",
+    description:
+      "Especialización en IA Generativa en UTN, enfocada en modelos modernos y aplicaciones prácticas.",
+    year: "2026",
+  },
+  {
+    side: "left",
+    icon: <TbMapStar className="h-7 w-7 text-primary" />,
+    title: "Curso de Diseño UX",
+    description:
+      "Formación en UX con foco en investigación, prototipado y diseño centrado en usuarios.",
+    year: "2026",
+  },
+  {
+    side: "right",
+    icon: <LuBrainCircuit className="h-7 w-7 text-primary" />,
     title: "Presente y futuro",
     description:
-      "Continúo expandiendo mi stack técnico en un curso de Java, mientras participo activamente en nuevos proyectos React. Siempre en evolución, buscando aportar lo mejor de mí en cada desafío y fortaleciendo mis habilidades de liderazgo.",
+      "En capacitación constante, escalando proyectos de alto impacto y combinando mi saber con IA para impulsar soluciones cada vez más innovadoras.",
     year: "Actualidad",
   },
 ];
