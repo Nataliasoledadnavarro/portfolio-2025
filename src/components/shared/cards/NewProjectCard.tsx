@@ -17,25 +17,25 @@ interface Props {
 const NewProjectCard = ({ project }: Props) => {
   return (
     <motion.div
-      className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-md shadow-primary dark:shadow-secondary p-3 max-w-xs md:max-w-3xl mx-auto  bg-white dark:bg-dark/40"
+      className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-md shadow-primary dark:shadow-secondary p-3 md:p-4 w-full md:max-w-3xl mx-auto bg-white dark:bg-dark/40"
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
       {/* Img */}
-      <div className="w-full md:w-1/3 bg-white dark:bg-dark/30 grid place-items-center rounded-xl overflow-hidden">
-        <div className="relative w-full h-48 md:h-56">
+      <div className="w-full md:w-1/3 bg-gradient-to-b from-primary/10 to-transparent dark:bg-dark/30 grid place-items-center rounded-xl overflow-hidden">
+        <div className="relative w-full h-40 md:h-56">
           <Image
             src={project.image}
             alt={project.title}
             fill
-            className="object-cover object-center rounded-xl"
+            className="object-contain object-center rounded-xl"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
       </div>
 
       {/* Contenido */}
-      <div className="w-full md:w-2/3 flex flex-col space-y-2 p-3">
+      <div className="w-full md:w-2/3 flex flex-col space-y-2 p-2 md:p-3">
         <div className="flex justify-between items-start">
           {project.tag && (
             <Chip
@@ -70,11 +70,11 @@ const NewProjectCard = ({ project }: Props) => {
           </div>
         </div>
 
-        <h3 className="font-black text-gray-800 dark:text-white text-xl">
+        <h3 className="font-black text-gray-800 dark:text-white text-lg md:text-xl">
           {project.title}
         </h3>
 
-        <p className=" text-sm text-gray-600 dark:text-gray-300 line-clamp-5">
+        <p className="text-xs md:text-sm text-gray-600 dark:text-gray-300 line-clamp-4 md:line-clamp-5">
           {project.description}
         </p>
       </div>

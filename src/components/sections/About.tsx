@@ -8,7 +8,7 @@ const About = () => {
           <div className="hidden sm:block w-1 bg-primary absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
           {timelineData.map((item, index) => (
-            <div className="mt-6 sm:mt-0 sm:mb-12" key={index}>
+            <div className="mt-6 sm:mt-0 sm:mb-8" key={index}>
               <div className="flex flex-col sm:flex-row items-center">
                 <div
                   className={`flex w-full mx-auto items-center ${
