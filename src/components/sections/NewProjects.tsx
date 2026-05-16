@@ -10,7 +10,7 @@ export default function NewProjects() {
   return (
     <section className="pt-28">
       <div className="container max-w-7xl mx-auto px-4">
-        <Titles text="Proyectos recientes" />
+        <Titles text="Proyectos personales recientes" />
         <motion.div
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
           variants={staggerContainer}
