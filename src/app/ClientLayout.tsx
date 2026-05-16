@@ -6,6 +6,7 @@ import "@/globals.css";
 import { ThemeProvider } from "../context/ThemeContext";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import ChatWidget from "../components/sections/ChatWidget";
 import { LazyMotion, domAnimation } from "framer-motion";
 
 const geistSans = Geist({
@@ -43,6 +44,7 @@ export default function ClientLayout({
             {children}
             <Footer />
           </LazyMotion>
+          <ChatWidget />
         </ThemeProvider>
       </body>
     </html>
