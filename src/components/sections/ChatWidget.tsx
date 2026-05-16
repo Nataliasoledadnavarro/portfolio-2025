@@ -221,7 +221,7 @@ export default function ChatWidget() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="fixed bottom-24 right-6 z-40 w-96 max-w-[calc(100vw-2rem)] h-[32rem] flex flex-col rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 bg-dark/80 backdrop-blur-md"
+            className="fixed bottom-24 right-6 z-40 w-96 max-w-[calc(100vw-2rem)] h-[min(32rem,calc(100vh-10.5rem))] flex flex-col rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 bg-dark/80 backdrop-blur-md"
           >
             {/* Header */}
             <div className="bg-secondary/90 backdrop-blur-sm px-5 py-3.5 flex items-center justify-between shrink-0">
